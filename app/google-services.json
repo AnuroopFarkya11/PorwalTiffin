@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "56866197935",
+    "project_id": "porwal-tiffin",
+    "storage_bucket": "porwal-tiffin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56866197935:android:23dbce4143fab068081f5a",
+        "android_client_info": {
+          "package_name": "com.example.porwaltiffin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56866197935-r2j217nnqjespovvrd78s2ou96j19bn5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNymLkMn4QsiINqHeUHCNl-OHYBm8AmsU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "56866197935-r2j217nnqjespovvrd78s2ou96j19bn5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".newhome_recyclerview"
+
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/thali_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/thaliback"
+        android:layout_margin="10dp"
+        tools:listitem="@layout/single_order_view"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/algse_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        tools:listitem="@layout/single_order_algse_view"
+        android:background="@drawable/algseback"/>
+
+
+
+
+</LinearLayout>

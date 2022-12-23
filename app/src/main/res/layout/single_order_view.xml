@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#851308"
+    >
+
+    <ImageView
+        android:id="@+id/thaliImage"
+        android:layout_width="280dp"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/normalthali"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/thali_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="26dp"
+        android:fontFamily="@font/itim"
+        android:text="NORMAL THALI"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thaliImage" />
+
+    <TextView
+        android:id="@+id/thali_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/itim"
+        android:text="Rs. 50"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thali_name" />
+
+    <Button
+        android:id="@+id/click_add"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#06252E"
+        android:fontFamily="@font/itim"
+        android:text="ADD"
+        app:cornerRadius="10dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/thali_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toEndOf="@+id/thali_name"
+        app:layout_constraintTop_toTopOf="@+id/thali_name"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/advance_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/thali_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toEndOf="@+id/thali_name"
+        app:layout_constraintTop_toTopOf="@+id/thali_name"
+        app:layout_constraintVertical_bias="0.0">
+        <Button
+            android:id="@+id/minus_btn"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:drawableBottom="@drawable/ic_baseline_remove_24"
+            />
+        <TextView
+            android:id="@+id/show_cnt"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#fff"
+            />
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:drawableBottom="@drawable/ic_baseline_add_24"
+            android:layout_marginEnd="10dp"
+            />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
